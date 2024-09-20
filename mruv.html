@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU y MRUV</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  
+    <nav class="navbar">
+            <ul class="ulNavbar">
+              <p class="info">Ingenieria en Sistemas de Información y Ciencias de la Computación</p>
+                <li class="liNavbar"><a class="nav-link" href="index.html">MRU</a></li>
+                <li class="liNavbar"><a class="nav-link" href="mruv.html">MRUV</a></li>
+            </ul>
+        </section>
+</nav>
+</div>
+<section class="informativo">
+    <h1>Movimiento Rectilíneo Uniforme Variado</h1>
+    <h2>¿Qué es MRUV?</h2>
+    <p>El Movimiento Rectilíneo Uniformemente Variado (MRUV) es un tipo de movimiento en el que un objeto se desplaza a lo largo de una trayectoria recta con una aceleración constante. Esto significa que la velocidad del objeto cambia de manera uniforme a lo largo del tiempo. </p>
+<div class="MRUVinfo">
+    <section>
+    <p> Las caracteristicas del MRUV:</p>
+          <ul>
+            <li >
+                <strong>Velocidad Inicial (Vo​): </strong>La velocidad del objeto al inicio del movimiento.
+            </li>
+            <li>
+                <strong> Velocidad Final (v):</strong>  La velocidad del objeto al final del intervalo de tiempo considerado.
+            </li>
+            <li>
+                <strong>Aceleración (a):</strong>El cambio en la velocidad por unidad de tiempo.
+            </li>
+            <li>
+                <strong>Tiempo (t):</strong>La duración durante la cual ocurre el movimiento.
+            </li>
+            <li>
+                <strong>Desplazamiento (s): </strong>La distancia recorrida por el objeto durante el movimiento.
+            </li>
+        </ul>
+    </section>
+    <section>
+        <img src="./Image/MRUV.gif" alt="Git de aceleracion con MRUV">
+    </section>
+</div>
+
+        <h2>Fórmulas del MRUV</h2>
+        <p>Las principales ecuaciones que describen el MRUV son:</p>
+        <h3>Ecuación de la Velocidad:</h3>
+        <div class="container">
+            <i class="formula">v=Vo​+a*t</i>
+        </div>
+        <p>Esta fórmula relaciona la velocidad final con la velocidad inicial, la aceleración y el tiempo.</p>
+        <h3>Ecuación del Desplazamiento:</h3>
+        <div class="container">
+            <i class="formula">s=Vo​*t+(1/2​)*a*t^2</i>
+        </div>
+        <p>Esta ecuación permite calcular el desplazamiento en función de la velocidad inicial, el tiempo y la aceleración. Este puede ser conocido como(s) o (d)</p>
+        <h3>Ecuación del Desplazamiento 2:</h3>
+        <div class="container">
+            <i class="formula">d=(Vo​+V)/2*t</i>
+        </div>
+        <p>Esta fórmula es especialmente útil en situaciones donde:</p>
+        <ul>
+        <li>Se conoce la velocidad inicial y final de un objeto.</li>
+        <li>Se desea calcular cuánto ha recorrido dicho objeto durante un periodo específico.</li>
+        </ul>
+        <h3>Ecuación del Desplazamiento 3:</h3>
+        <div class="container">
+            <i class="formula">Sn​=Vo​+a/2​(2n−1)
+       </div>
+      <p>Componentes de la Fórmula</p>
+        <ol>
+            <li>Sn​: Distancia recorrida en el n-ésimo segundo.</li>
+            <li>Vo​: Velocidad inicial del objeto al comienzo del movimiento.</li>
+            <li>a: Aceleración constante del objeto.</li>
+            <li>n: Número del segundo en el que deseas calcular la distancia.</li>
+        </ol>
+        
+       <h3>Ecuación de la Velocidad en función del Desplazamiento:</h3>
+        <div class="container">
+            <i class="formula">v^2=v0^2​+2a*s</i>
+        </div>
+        <p>Esta fórmula es útil cuando se conoce el desplazamiento y se desea encontrar la velocidad final sin necesidad de conocer el tiempo.</p>
+        <h3>Este es un resumen de las formulas y como se ilustrativa  un vehiculo en MRU </h3>
+        <div class="imagen">
+            <img src="./Image/formulaMRUV.jpg" alt="FormulaMRUV" style="width: 250px;">
+            <img src="./Image/mruv.jpg" alt="MovimientoReclilineoUniformeVariado">
+        </div>
+    <br>
+<hr>
+<h3>Formulario personalizado para encontrar Vf sin distancia, distancia sin aceleracion y Vf sin tiempo</h3>
+<br>
+
+    <div class="formularios-container"> 
+     <div class="formularios">
+    <form action="">
+        <h3>Formulario para Calcular la velocidad final sin distancia</h3>
+        <div id="velocidadInicialInput">
+            <Label>Velocidad inicial (Vo)<input type="number" id="velocidadInicialIngresada" required></Label><br>
+        </div>
+        <div id="aceleracionInput">
+            <Label>Aceleración: <input type="number" id="aceleracionIngresado" required></Label>
+        </div>    
+        <div id="tiempoInput">
+            <Label>Tiempo: <input type="number" id="tiempoIngresado" required></Label>
+        </div>  
+    </form>
+    <button type="submit" onclick="calcularVelocidadFinal()">Calcular Velocidad</button>
+    <div class="resutado" id="resultadoVelocidadFinal"></div> 
+</div>
+
+<div class="formularios">
+    <form action="">
+        <h3>Formulario para distancia sin aceleracion</h3>
+        <div id="velocidadInicialInput">
+            <Label>Velocidad inicial (Vo)<input type="number" id="velocidadInicialIngresada2" required></Label><br>
+        </div>
+        <div id="velocidadFinalInput">
+            <Label>Velocidad final<input type="number" id="velocidadFinalIngresada" required></Label><br>
+        </div>   
+        <div id="tiempoInput">
+            <Label>Tiempo: <input type="number" id="tiempoIngresado2" required></Label>
+        </div>  
+    </form>
+    <button type="submit" onclick="calcularDistancia()">Calcular Velocidad</button>
+    <div class="resutado" id="resultadoDistancia"></div> 
+</div>
+
+<div class="formularios">
+    <form action="">
+        <h3>Formulario para encontrar la velocidad final sin tiempo</h3>
+        <div id="velocidadInicialInput">
+            <Label>Velocidad inicial (Vo)<input type="number" id="velocidadInicialIngresada3" required></Label><br>
+        </div>
+        <div id="aceleracionInput">
+            <Label>Aceleración: <input type="number" id="aceleracionIngresado2" required></Label>
+        </div>   
+        <div id="DistanciaInput">
+            <Label>Distancia: <input type="number" id="DistanciaIngresado" required></Label>
+        </div>  
+    </form>
+    <button type="submit" onclick="calcularVelocidadFinal2()">Calcular Velocidad</button>
+    <div class="resutado" id="VelocidadFinal"></div> 
+</div>
+
+</div>
+</section>
+<br>
+<footer class="footer"> Sandra Leticia Tiney Sisay 2290-16-22043</footer>
+    <script src="./JS/mruv.js"></script>
+</body>
+</html>

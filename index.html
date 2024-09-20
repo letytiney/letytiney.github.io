@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MRU y MRUV</title>
+    <link rel="stylesheet" href="./CSS/style.css">
+</head>
+<body>
+  
+    <nav class="navbar">
+            <ul class="ulNavbar">
+              <p class="info">Ingenieria en Sistemas de Información y Ciencias de la Computación</p>
+                <li class="liNavbar"><a class="nav-link" href="index.html">MRU</a></li>
+                <li class="liNavbar"><a class="nav-link" href="mruv.html">MRUV</a></li>
+            </ul>
+        </section>
+</nav>
+</div>
+<section class="informativo">
+    <h1>Movimiento Rectilíneo Uniforme</h1>
+    <h2>¿Qué es MRU?</h2>
+    <p>El Movimiento Rectilíneo Uniforme (MRU) es un concepto fundamental en la física que describe el movimiento de un objeto que se desplaza en línea recta a una velocidad constante. Lo que implica que no hay aceleración. Este concepto es fundamental en la cinemática y se caracteriza por las siguientes propiedades:</p>
+    <div class="MRUinfo">    
+    <section> 
+        <ul>
+            <li >
+                <strong>Trayectoria recta:</strong> El movimiento se realiza sobre una línea recta.
+            </li>
+            <li>
+                <strong> Velocidad constante:</strong>  La magnitud y dirección de la velocidad permanecen inalteradas a lo largo del tiempo, lo que significa que el objeto recorre distancias iguales en intervalos de tiempo iguales.
+            </li>
+            <li>
+                <strong>Aceleración nula: </strong> 
+            </li>
+        </ul>
+    </section>
+    <section>
+        <img src="./Image/MRU.gif" alt="Git de MRU" class="git">
+    </section>
+    </div>
+        <p>La relación entre distancia (d), velocidad (v) y tiempo (t) en un MRU se expresa mediante la fórmula:</p>
+        <div class="container">
+            <i class="formula">d = v ⋅ t</i>
+        </div>
+        <p>Esto significa que para calcular la distancia recorrida, se multiplica la velocidad constante por el tiempo transcurrido. De igual manera, si se conoce la distancia y la velocidad, se puede determinar el tiempo usando:</p>
+        <div class="container">
+            <i class="formula">t=d/v</i>
+        </div>
+      
+       
+        <p>La velocidad es una magnitud vectorial que indica el cambio de posición de un objeto en un intervalo de tiempo determinado. La fórmula básica para calcular la velocidad (v) es:</p>
+        <div class="container">
+            <i class="formula">v=d/t</i>
+        </div>
+
+        <h3>Este es un resumen de las formulas y como se ilustrativa  un vehiculo en MRU </h3>
+        <div class="imagen">
+          
+            <img src="./Image/formulaMRU.jpg" alt="FormulaMRU" style="width: 250px;">
+          
+            <img src="./Image/movimiento-rectilineo-uniforme.jpg" alt="MovimientoReclilineoUniforme">
+      
+    
+        </div>
+       
+        <p>Este tipo de movimiento es común en situaciones ideales donde no actúan fuerzas externas significativas, permitiendo que un objeto mantenga su velocidad constante</p>
+    <ul>
+        <li>Velocidad: Es la rapidez constante del objeto en movimiento. Se expresa en unidades como metros por segundo (m/s) o kilómetros por hora (km/h).</li>
+        <li>Distancia (d):
+            Es la longitud total recorrida por el objeto durante el movimiento. Se mide en metros (m) o kilómetros (km).</li>
+        <li>Tiempo (t):
+            Es el intervalo durante el cual ocurre el movimiento. Se puede medir en segundos (s), minutos (min) o horas (h).</li>
+    </ul>
+    <hr>
+    <h3>Formulario personalizado para encontrar Vf sin distancia, distancia sin aceleracion y Vf sin tiempo</h3>
+    <br>
+    <div class="formularios-container"> 
+   <div class="formularios">
+    <form action="">
+        <h3>Formulario para Calcular la velocidad</h3>
+        <p>La formula para la velocidad es distancia / tiempo</p>
+        <div id="distanciaInput">
+            <Label>Distancia (d): <input type="number" id="distanciaIngresada" required></Label><br>
+        </div>
+        <div id="tiempoInput">
+            <Label>Tiempo (t): <input type="number" id="tiempoIngresado" required></Label>
+        </div>    
+    </form>
+    <button type="submit" onclick="calcularVelocidadMRU()">Calcular Velocidad</button>
+    <div class="resutado" id="resultadoVelocidad"></div> 
+</div>
+    <div class="formularios">
+
+    <form action="">
+        <h3>Formulario para Calcular la distancia</h3>
+        <p>La formula para la distancia es velocidad * tiempo</p>
+        
+        <div id="velocidadInput">
+            <Label>Velocidad (v): <input type="number" id="velocidadIngresada" required></Label><br>
+        </div>
+        <div id="tiempoInput">
+            <Label>Tiempo (t): <input type="number" id="tiempoIngresado2" required></Label>
+        </div>     
+    </form>
+    <button type="submit" onclick="calcularDistanciaMRU()">Calcular Distancia</button>
+
+    <div class="resutado" id="resultadoDistancia"></div>
+
+</div>
+<div class="formularios">
+
+    <form action="">
+        <h3>Formulario para Calcular la tiempo</h3>
+        <p>La formula para el tiempo es Distancia/velocidad </p>
+        <div id="distanciaInput">
+            <Label>Distancia (d): <input type="number" id="distanciaIngresada2" required></Label><br>
+        </div>
+        <div id="velocidadInput">
+            <Label>Velocidad (v): <input type="number" id="velocidadIngresada2" required></Label><br>
+        </div>    
+    </form>
+    <button type="submit" onclick="calcularTiempoMRU()">Calcular Tiempo</button>
+
+    <div class="resutado" id="resultadoTiempo"></div>
+</div>
+</div>
+</section>
+<br>
+<footer class="footer"> Sandra Leticia Tiney Sisay 2290-16-22043</footer>
+    <script src="./JS/mru.js"></script>
+</body>
+</html>

@@ -1,0 +1,134 @@
+body {
+    margin: 0; 
+    padding: 0;
+}
+.ulNavbar{
+    border-bottom: 2px solid  #8432be;
+    text-align: center;
+}
+.liNavbar{
+    float: none;
+    display: inline-block;
+}
+.nav-link{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 18px 22px;
+    text-decoration: none;
+     font-family: Arial, Helvetica, sans-serif;
+     font-weight: 600;
+     font-size: 1.125rem;
+     line-height: 1rem;
+}
+.info{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    font-size: 1.125rem;
+}
+li a:hover:not(.active) {
+    color:  #9a4ce3 ;
+}
+.right{
+ float: right;
+}
+h1, h2, h3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+h1{
+    font-size: 30px;
+}
+h2{
+    font-size: 22px;
+}
+h3{
+    font-size: 20px;
+}
+p, ul, footer, label, a{
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+.informativo{
+    max-width: 80%; 
+    margin: 10px auto;
+   
+}
+.formularios-container {
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Crea columnas responsivas */
+    gap: 60px; 
+}
+.imagen{
+    display: grid; 
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 60px; 
+
+}
+.MRUVinfo   {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+   gap: 60px;
+}
+.MRUinfo{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+   gap: 60px; 
+}
+.git{
+    width: 270px;
+}
+.container {
+    display: flex; 
+    justify-content: center;
+    margin: 20px;
+}
+.formula{
+    font-size: 20px;
+}
+
+.formularios {
+    background-color: white; 
+    border: 1px solid #ccc; 
+    border-radius: 8px;
+    padding: 20px; 
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    width: 300px; 
+    height: 350px;
+}
+
+input[type="number"] {
+    width: calc(100% - 10px); 
+    padding: 5px; 
+    border: 1px solid #ccc; 
+    border-radius: 4px;
+    
+}
+
+button {
+    width: 55%; 
+    padding: 10px; 
+    background-color: #a26dde; 
+    color: white; 
+    border: none; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    font-size: 15px; 
+    margin-top: 10px;
+}
+button:hover {
+    background-color: #8b5bc6; 
+}
+.resutado{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18px;
+}
+
+.footer {
+    background-color: rgb(91, 86, 86); 
+    color: white; 
+    text-align: center; 
+    padding: 15px; 
+    position: relative; 
+    bottom: 0; 
+    width: 100%; 
+}
